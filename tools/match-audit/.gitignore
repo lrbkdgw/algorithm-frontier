@@ -1,0 +1,5 @@
+bin/
+*.o
+report-classical.md
+report-*.json
+report-*.md

@@ -1,5 +1,14 @@
 # History
 
+## 2026-10-29 — Auditing harness for claimed matching complexity
+
+- Added [tools/match-audit](tools/match-audit/), a C++17 harness that tests a *provided* matching program rather than the repository's manuscripts. It certifies every returned matching with an independent blossom search under Berge's criterion and tries to reject the claimed growth class from adversarial instance ladders.
+- The families target specific terms: empty graphs for the linear scan, duplicate-heavy inputs for per-record charges, disjoint odd cycles for contraction load, and bipartite controls for the classical square-root baseline. Ladders are rescaled per family so that no point sits inside process-startup noise, and noise, spread and baseline are reported instead of hidden.
+- Two independent statistical tests are recorded, a whole-shape least-squares fit and a fitted-exponent test with a standard error, because a short ladder can fit the claimed shape to a couple of percent even when the true growth is quadratic.
+- Three example programs and a control are included: a correct classical solver that the audit refutes, a bipartite solver whose greedy out-of-scope fallback the correctness sweep rejects, and a linear control that must not be refuted. The harness self-test compares its verifier with exhaustive dynamic programming on every graph through nine vertices.
+- The tool is independent of the canonical suite and is not part of its 130 checks; the repository checks, notation, link and presentation guards are unaffected.
+
+
 ## 2026-10-28 — Author handle and result ordering
 
 - Standardized current repository attribution, copyright notices, citation records and paper author lines to icekylinx, retaining GPT-6 Astra Pro and external source credits. Original archive fingerprints remain historical identities.
